@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  color: #000000;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dropbtn {
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #aa0000;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+
+}
+
+.dropdown-content a {
+  color: #000000;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+
+.logo {
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 5px;
+  color: #000000;
+  overflow: hidden;
+}
+
+nav ul {
+  padding-inline: rem;
+  display: flex;
+  text-align: center;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+  line-height: 5px;
+}
+
+nav {
+  background-color: #aa0000;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: #000000;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+footer {
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  background-color: #910000;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: relative;
+}
+
+.featured-video {
+  width: 80%;
+  max-height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  align-content: center;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #8f8f8f;
+  opacity: 100%;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+main aside .social-media {
+  height: 100%;
+  color: #000000;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000000;
+  transition: all 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: nowrap;
+  }
+
+  #content,
+  aside {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+main aside {
+  align-self: normal;
+
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-flow: nowrap;
+  }
+
+  #content,
+  aside {
+    width: 50%;
+    padding: 0;
+  }
+
+  main aside {
+align-self: auto;  }
+}
